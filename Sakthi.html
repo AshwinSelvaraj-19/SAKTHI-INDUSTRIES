@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Buy authentic LG Asafoetida Powder from Sakthi Industries. Naturally strong, traditionally trusted.">
+  <meta name="keywords" content="asafoetida, hing, Sakthi Industries, spices">
+  <title>Sakthi Industries</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <script src="Sakthi.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <header class="w-full bg-orange-700 shadow">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-2xl font-semibold text-white">Sakthi Industries</h1>
+      <div class="flex gap-4 items-center text-white">
+        <a href="#" class="hover:text-orange-400 transition"><i class="bi bi-search text-sm"></i></a>
+        <a href="#" class="hover:text-orange-400 transition"><i class="bi bi-person text-xl"></i></a>
+        <a href="#" id="cart-button" class="hover:text-orange-400 transition"><i class="bi bi-bag text-xl"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-orange-700 text-white px-6 py-4 space-y-2">
+    <a href="#" class="hover:text-orange-400">Search</a>
+    <a href="#" class="hover:text-orange-400">Profile</a>
+    <a href="#" class="hover:text-orange-400">Cart</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('blended-curcumin-powder-wooden-spoon.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center text-white px-4">
+      <h2 class="text-4xl md:text-5xl font-semibold">Authentic Taste, Handcrafted Hing.</h2>
+      <p class="mt-4 text-lg">Naturally strong. Traditionally trusted.</p>
+      <a href="#shop-now" class="mt-6 px-6 py-3 border border-white hover:bg-orange-400 hover:text-white hover:border-none transition rounded">
+        Shop now
+      </a>
+    </div>
+  </section>
+
+  <!-- Promo Section -->
+  <div class="bg-gradient-to-r from-orange-400 to-red-500 text-white p-6 md:p-10 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6 my-8">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold mb-2">🔥 Mega Sale is Live!</h2>
+      <p class="text-lg md:text-xl">Get up to <span class="font-bold text-yellow-300">50% OFF</span> on select items</p>
+    </div>
+    <a href="#shop-now" class="bg-white text-red-600 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-100 transition duration-300">
+      Shop Now
+    </a>
+  </div>
+  
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar-wrapper" class="fixed inset-0 z-50 hidden">
+    <div id="cart-overlay" class="absolute inset-0 bg-black opacity-30"></div>
+    <div id="cart-sidebar" class="absolute right-0 top-0 w-80 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="flex items-center justify-between p-4 border-b">
+        <h2 class="text-lg font-semibold text-gray-800">Your Cart</h2>
+        <button id="close-cart" class="text-gray-500 hover:text-orange-600 text-xl">&times;</button>
+      </div>
+      <div id="cart-items" class="p-4 space-y-4 overflow-y-auto h-[calc(100%-160px)]">
+        <div class="flex items-center gap-4">
+          <img src="peru.jpg" alt="LG Asafoetida" class="w-16 h-16 object-contain border rounded">
+          <div class="flex-1">
+            <p class="text-sm font-medium text-gray-800">LG Asafoetida 100g</p>
+            <div class="flex items-center gap-2 mt-1">
+              <button class="bg-orange-500 text-white w-6 h-6 rounded-full">-</button>
+              <span class="text-sm">1</span>
+              <button class="bg-orange-500 text-white w-6 h-6 rounded-full">+</button>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700">₹148</p>
+        </div>
+      </div>
+      <div class="p-4 border-t">
+        <div class="flex justify-between text-base font-semibold">
+          <span>Total:</span>
+          <span>₹148</span>
+        </div>
+        <div class="mb-4">
+          <button class="w-full mt-4 bg-orange-600 text-white py-2 rounded-full hover:bg-orange-700 transition">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Grid Section -->
+  <div class="bg-white mt-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 py-4">
+      
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru.jpg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru2.jpeg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+       <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="per4.jpg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru3.png" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru.jpg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru2.jpeg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="per4.jpg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru3.png" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru.jpg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru2.jpeg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="per4.jpg" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Product Card -->
+      <div class="bg-white overflow-hidden hover:shadow-md transition">
+        <div class="relative p-4">
+          <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs px-2 py-1 rounded-full">20% off</span>
+          <img src="peru3.png" alt="LG Asafoetida Powder 100g" class="w-full h-64 object-contain">
+        </div>
+        <div class="p-4 text-center bg-orange-50 rounded-xl">
+          <h3 class="text-lg font-semibold text-gray-900">LG Asafoetida Powder 100g</h3>
+          <p class="text-gray-700 mt-1">₹148</p>
+          <div class="mt-4 flex justify-center gap-3">
+            <button class="bg-orange-600 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-800 transition">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+</body>
+</html>

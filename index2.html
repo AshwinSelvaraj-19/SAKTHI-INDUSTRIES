@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up / Log In</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-tr from-orange-700 via-red-500 to-orange-400">
+  <div class="bg-white rounded-xl shadow-lg w-full max-w-md p-8">
+    
+    <!-- Toggle Tabs -->
+    <div class="flex justify-between mb-6 bg-gray-100 rounded-full overflow-hidden text-sm font-semibold">
+      <button id="signupTab" class="w-1/2 py-2 bg-black text-white">Sign up</button>
+      <button id="loginTab" class="w-1/2 py-2 text-gray-600">Log in</button>
+    </div>
+
+    <!-- SIGN UP FORM -->
+    <div id="signupForm">
+      <h2 class="text-center text-xl font-semibold mb-6">Sign up</h2>
+      <div class="flex flex-col space-y-3 mb-4">
+        <button class="flex items-center justify-center space-x-2 border rounded-full py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="w-5 h-5" />
+          <span>Sign up with Facebook</span>
+        </button>
+        <button class="flex items-center justify-center space-x-2 border rounded-full py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="w-5 h-5" />
+          <span>Sign up with Google</span>
+        </button>
+      </div>
+      <div class="flex items-center my-4">
+        <hr class="flex-grow border-gray-300" />
+        <span class="mx-2 text-gray-500 text-sm">OR</span>
+        <hr class="flex-grow border-gray-300" />
+      </div>
+      <form class="space-y-4">
+        <div class="flex space-x-2">
+          <input type="text" placeholder="First name" class="w-1/2 border rounded px-3 py-2 text-sm" required />
+          <input type="text" placeholder="Last name" class="w-1/2 border rounded px-3 py-2 text-sm" required />
+        </div>
+        <input type="email" placeholder="Email address" class="w-full border rounded px-3 py-2 text-sm" required />
+        <input type="password" placeholder="Password" class="w-full border rounded px-3 py-2 text-sm" required />
+        <button type="submit" class="w-full bg-gray-300 text-white py-2 rounded font-semibold">Sign up</button>
+      </form>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div id="loginForm" class="hidden">
+      <h2 class="text-center text-xl font-semibold mb-6">Log in</h2>
+      <div class="flex flex-col space-y-3 mb-4">
+        <button class="flex items-center justify-center space-x-2 border rounded-full py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="w-5 h-5" />
+          <span>Log in with Facebook</span>
+        </button>
+        <button class="flex items-center justify-center space-x-2 border rounded-full py-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="w-5 h-5" />
+          <span>Log in with Google</span>
+        </button>
+      </div>
+      <div class="flex items-center my-4">
+        <hr class="flex-grow border-gray-300" />
+        <span class="mx-2 text-gray-500 text-sm">OR</span>
+        <hr class="flex-grow border-gray-300" />
+      </div>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email address" class="w-full border rounded px-3 py-2 text-sm" required />
+        <input type="password" placeholder="Password" class="w-full border rounded px-3 py-2 text-sm" required />
+        <button type="submit" class="w-full bg-gray-600 text-white py-2 rounded font-semibold">Log in</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Toggle Logic -->
+  <script>
+    const signupTab = document.getElementById('signupTab');
+    const loginTab = document.getElementById('loginTab');
+    const signupForm = document.getElementById('signupForm');
+    const loginForm = document.getElementById('loginForm');
+
+    signupTab.addEventListener('click', () => {
+      signupTab.classList.add('bg-black', 'text-white');
+      loginTab.classList.remove('bg-black', 'text-white');
+      loginTab.classList.add('text-gray-600');
+      signupForm.classList.remove('hidden');
+      loginForm.classList.add('hidden');
+    });
+
+    loginTab.addEventListener('click', () => {
+      loginTab.classList.add('bg-black', 'text-white');
+      signupTab.classList.remove('bg-black', 'text-white');
+      signupTab.classList.add('text-gray-600');
+      loginForm.classList.remove('hidden');
+      signupForm.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
